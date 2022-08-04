@@ -29,3 +29,15 @@ https://argoproj.github.io/cd/
    Login with admin:<password from above>
 6. ```argocd account update-password```
 
+
+Example links showing usage of crossplane and argocd
+
+* https://github.com/saiyam1814/kcd-chennai
+  * https://github.com/saiyam1814/kcd-chennai/tree/main/infra
+    These are crossplane infrastructure yaml files
+  * https://github.com/saiyam1814/kcd-chennai/blob/main/deploy/applicationset.yaml
+    This applicationset seems to be the magic sauce that allows the application to be deployed into a new infrastructure
+    This is an argocd yaml file, pointing on that application repo (below)
+* https://github.com/saiyam1814/argo-demo  <- application being deployed
+  This contains the yaml files that will be deployed to the cluster
+  I think these can actually be crossplane yaml files... maybe... (will try this)
