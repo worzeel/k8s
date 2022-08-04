@@ -7,8 +7,8 @@ https://crossplane.io
 First install everything required - https://crossplane.io/docs/v1.9/getting-started/install-configure.html
 
 1. ```kubectl create ns crossplane-system```
-2. * ```helm repo add crossplane-stable https://charts.crossplane.io/stable```
-3. * ```helm repo update```
+2. ```helm repo add crossplane-stable https://charts.crossplane.io/stable``` (only done once)
+3. ```helm repo update``` (only done once)
 4. ```helm install crossplane --namespace crossplane-system crossplane-stable/crossplane```
 
 ### Install CLI
