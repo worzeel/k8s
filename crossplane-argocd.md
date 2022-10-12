@@ -29,8 +29,15 @@ https://argoproj.github.io/cd/
    Login with admin:<password from above>
 6. ```argocd account update-password```
 
+### Ingress
 
-Example links showing usage of crossplane and argocd
+There is now an example ingress.yaml that can be applied, which can be used instead of the `port-forward` mentioned above.
+
+```kubectl apply -f ingress.yaml```
+
+ArgoCD should be able to be accessed at `https://argocd.localtest.me`
+
+# Other links
 
 * https://github.com/saiyam1814/kcd-chennai
   * https://github.com/saiyam1814/kcd-chennai/tree/main/infra
